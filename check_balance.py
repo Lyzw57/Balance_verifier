@@ -13,7 +13,7 @@ def check_balance(balance_before: float, change_in_plus: float, change_in_minus:
 	balance_after = balance_before + round((change_in_plus / exchange_rate),2) - round((change_in_minus / exchange_rate), 2)
 	return balance_after
 	
-def get_user_input():
+def get_user_input(): # TODO: zastąpić pobeiraniem danych z wiersza polecenia. (?)
 	"""Takes the floating point number from user.
 
 	Returns:
@@ -35,8 +35,10 @@ def show_result(balance_after: float):
 	print(f"Saldo po zmianach: {balance_after:,}")
 	
 def init_calc():
+	# TODO: dopisać docstring.
 	"""
 	"""
+	# TODO: dopisać funkcjonalnośc pobierania danych z wiersza polecenia. 
 	print("Podaj saldo poprzednie: ", end=" ")
 	balance_before = get_user_input()
 	print("Podaj zmiany na plus: ", end=" ")
